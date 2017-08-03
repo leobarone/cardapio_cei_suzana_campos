@@ -24,10 +24,6 @@ vetor_dia_semana <- function(lista_cardapio, dia_semana){
   return(vetor)
 }
 
-url_sopa <-"https://www.dropbox.com/s/pubxuna75aa66ji/sopa.png"
-download.file(url_sopa, "sopa.png")
-
-
 cardapio <- function(){
   
   url_sme <- "http://portal.sme.prefeitura.sp.gov.br//Main/Noticia/Visualizar/PortalSMESP/Cardapios-das-Unidades-com-Gestao-Terceirizada"
@@ -162,9 +158,6 @@ ui <- fluidPage(
     # Create a spot for the barplot
     mainPanel(
       tableOutput("tableOutput"),
-      hr(),
-      hr(),
-      hr(),
       hr(),
       imageOutput("preImage")
     )
